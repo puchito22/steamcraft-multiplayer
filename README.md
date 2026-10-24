@@ -15,16 +15,25 @@ Los archivos están organizados por plataforma y versión en sus respectivas car
 
 ```
 SteamCraft-Multiplayer/
-├── Fabric/
+├── Fabric/ (Mods para Cliente / LAN)
 │   ├── steamcraft-1.19.2.jar
 │   ├── steamcraft-1.20.1.jar
 │   └── steamcraft-1.21.1.jar
-├── Forge/
+├── Forge/ (Mods para Cliente / LAN)
 │   └── steamcraft-1.20.1.jar
-├── NeoForge/
+├── NeoForge/ (Mods para Cliente / LAN)
 │   └── steamcraft-1.21.1.jar
-└── Spigot/
-    └── steamcraft-spigot.jar
+└── Servidor/ (Para Servidores Dedicados)
+    ├── Paper-Spigot/
+    │   └── steamcraft-spigot.jar (Plugin para Paper/Spigot 1.12.2 a 1.21.1+)
+    ├── Fabric/
+    │   ├── steamcraft-server-1.19.2.jar
+    │   ├── steamcraft-server-1.20.1.jar
+    │   └── steamcraft-server-1.21.1.jar
+    ├── Forge/
+    │   └── steamcraft-server-1.20.1.jar
+    └── NeoForge/
+        └── steamcraft-server-1.21.1.jar
 ```
 
 > **Universal (Cliente LAN + Servidor Dedicado):** Todos los archivos de Fabric, Forge y NeoForge son híbridos universales. Si los colocas en la carpeta `mods` de un servidor dedicado (`server.jar`), el mod detectará automáticamente el servidor dedicado y publicará el puerto en Steam sin requerir interfaz gráfica.
