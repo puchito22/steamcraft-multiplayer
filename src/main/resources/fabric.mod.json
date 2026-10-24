@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "steamcraft",
+  "version": "${version}",
+  "name": "SteamCraft (Spacewar P2P)",
+  "description": "Multijugador en Minecraft conectándose a Steam y usando Spacewar (AppID 480) para jugar con amigos sin abrir puertos.",
+  "authors": [
+    "Antigravity"
+  ],
+  "license": "MIT",
+  "icon": "assets/steamcraft/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.steamcraft.SteamCraft"
+    ],
+    "client": [
+      "com.steamcraft.client.SteamCraftClient"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "steamcraft.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": ">=1.21",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
