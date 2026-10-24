@@ -67,3 +67,8 @@ SteamCraft-Multiplayer/
 3. En la parte superior verás un botón llamado **"Amigos de Steam"**.
 4. Haz clic en él: aparecerán tus amigos de Steam que tengan un mundo abierto. Haz clic en **"Unirse"**.
 5. *Alternativa:* Si tu amigo te mandó una invitación de Steam, haz clic en **"Unirse a la partida"** directamente desde el chat o la notificación de Steam.
+
+## Disclaimer
+SteamCraft is an unofficial open-source modification for Minecraft. 
+It is not affiliated with, endorsed by, or associated with Mojang Studios, Microsoft, or Valve Corporation.
+Minecraft is a trademark of Mojang AB. Steam and Spacewar are trademarks of Valve Corporation.
