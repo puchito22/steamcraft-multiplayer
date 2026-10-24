@@ -1,7 +1,7 @@
-# 🎮 SteamCraft - Multijugador P2P de Minecraft vía Steam
+# SteamCraft - Multijugador P2P de Minecraft vía Steam
 **SteamCraft** es un mod para Minecraft que permite jugar multijugador con tus amigos utilizando la red Peer-to-Peer (P2P) de **Steam** mediante el **AppID 480 (Spacewar)**. 
 
-### 🚀 Ventajas:
+### Ventajas:
 * **Sin abrir puertos ni configurar routers** (cero Port Forwarding).
 * **Sin programas externos** como Hamachi, Radmin VPN o ngrok.
 * **Túnel directo y seguro** mediante los relays y sockets de Steam Datagram Relay (SDR).
@@ -9,7 +9,7 @@
 
 ---
 
-## 📦 Versiones Listas para Descargar y Compartir
+## Versiones Listas para Descargar y Compartir
 
 Los archivos están organizados por plataforma y versión en sus respectivas carpetas:
 
@@ -74,7 +74,7 @@ SteamCraft-Multiplayer/
 
 ---
 
-## 📥 Cómo Instalar
+##  Cómo Instalar
 
 1. Elige la carpeta según el cargador de mods que uses (**Fabric**, **Forge** o **NeoForge**) y la versión de tu Minecraft.
 2. Copia el archivo `.jar` correspondiente.
@@ -84,7 +84,7 @@ SteamCraft-Multiplayer/
 
 ---
 
-## 🕹 Cómo Jugar
+##  Cómo Jugar
 
 ### Como Anfitrión (Host):
 1. Inicia Minecraft (con Steam abierto).
@@ -103,7 +103,7 @@ SteamCraft-Multiplayer/
 
 ---
 
-## ☕ Donaciones / Support the Project
+##  Donaciones / Support the Project
 
 Si este mod te sirvió para jugar con tus amigos y deseas apoyar el desarrollo y futuras actualizaciones, ¡cualquier donación es bienvenida y enormemente agradecida!
 
