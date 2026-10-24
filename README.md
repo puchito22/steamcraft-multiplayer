@@ -16,21 +16,25 @@ Los archivos están organizados por plataforma y versión en sus respectivas car
 ```
 SteamCraft-Multiplayer/
 ├── Fabric/ (Mods para Cliente / LAN)
+│   ├── steamcraft-1.16.5.jar
 │   ├── steamcraft-1.19.2.jar
 │   ├── steamcraft-1.20.1.jar
 │   └── steamcraft-1.21.1.jar
 ├── Forge/ (Mods para Cliente / LAN)
+│   ├── steamcraft-1.16.5.jar
 │   └── steamcraft-1.20.1.jar
 ├── NeoForge/ (Mods para Cliente / LAN)
 │   └── steamcraft-1.21.1.jar
-└── Servidor/ (Para Servidores Dedicados)
+└── Servidor/ (Para Servidores Dedicados 24/7)
     ├── Paper-Spigot/
-    │   └── steamcraft-spigot.jar (Plugin para Paper/Spigot 1.12.2 a 1.21.1+)
+    │   └── steamcraft-spigot.jar (Plugin universal para Paper / Spigot / Purpur 1.12.2 a 1.21.1+)
     ├── Fabric/
+    │   ├── steamcraft-server-1.16.5.jar
     │   ├── steamcraft-server-1.19.2.jar
     │   ├── steamcraft-server-1.20.1.jar
     │   └── steamcraft-server-1.21.1.jar
     ├── Forge/
+    │   ├── steamcraft-server-1.16.5.jar
     │   └── steamcraft-server-1.20.1.jar
     └── NeoForge/
         └── steamcraft-server-1.21.1.jar
