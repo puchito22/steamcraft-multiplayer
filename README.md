@@ -68,6 +68,26 @@ SteamCraft-Multiplayer/
 4. Haz clic en él: aparecerán tus amigos de Steam que tengan un mundo abierto. Haz clic en **"Unirse"**.
 5. *Alternativa:* Si tu amigo te mandó una invitación de Steam, haz clic en **"Unirse a la partida"** directamente desde el chat o la notificación de Steam.
 
+---
+
+## ☕ Donaciones / Support the Project
+
+Si este mod te sirvió para jugar con tus amigos y deseas apoyar el desarrollo y futuras actualizaciones, ¡cualquier donación es bienvenida y enormemente agradecida!
+
+* **Litecoin (LTC):**
+  `ltc1q90hfyjnzmxjevcrcuy6cta2hgj7v5w0n29unun`  
+  *(Red: LTC)*
+
+* **USDT (Tether):**
+  `0x791DA670fe512e63E4e30F549c0262d49A2cBA2d`  
+  *(Red: BNB Smart Chain - BEP20)*
+
+* **BNB:**
+  `0x791DA670fe512e63E4e30F549c0262d49A2cBA2d`  
+  *(Red: BNB Smart Chain - BEP20)*
+
+---
+
 ## Disclaimer
 SteamCraft is an unofficial open-source modification for Minecraft. 
 It is not affiliated with, endorsed by, or associated with Mojang Studios, Microsoft, or Valve Corporation.
