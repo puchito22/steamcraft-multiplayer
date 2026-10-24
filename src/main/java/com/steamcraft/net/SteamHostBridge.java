@@ -2,7 +2,6 @@ package com.steamcraft.net;
 
 import com.codedisaster.steamworks.*;
 import com.steamcraft.steam.SteamManager;
-import net.minecraft.client.Minecraft;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -67,9 +66,11 @@ public class SteamHostBridge {
         this.lobbyId = newLobbyId;
         SteamMatchmaking matchmaking = SteamManager.getInstance().getMatchmaking();
         if (matchmaking != null && newLobbyId != null && newLobbyId.isValid()) {
-            String playerName = "Player";
+            String playerName = "Server";
             try {
-                playerName = Minecraft.getInstance().getUser().getName();
+                if (SteamManager.getInstance().getFriends() != null) {
+                    playerName = SteamManager.getInstance().getFriends().getPersonaName();
+                }
             } catch (Throwable ignored) {
             }
 

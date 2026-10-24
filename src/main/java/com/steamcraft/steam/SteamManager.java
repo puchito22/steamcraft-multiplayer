@@ -3,7 +3,6 @@ package com.steamcraft.steam;
 import com.codedisaster.steamworks.*;
 import com.steamcraft.net.SteamClientBridge;
 import com.steamcraft.net.SteamHostBridge;
-import net.minecraft.client.Minecraft;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -67,12 +66,29 @@ public class SteamManager {
         // Create steam_appid.txt in current working dir and mc game dir
         writeAppIdFile(new File("steam_appid.txt"));
         try {
-            File gameDir = Minecraft.getInstance().gameDirectory;
-            if (gameDir != null) {
-                writeAppIdFile(new File(gameDir, "steam_appid.txt"));
+            Class<?> mcClass = Class.forName("net.minecraft.client.Minecraft");
+            Object mcInst = mcClass.getMethod("getInstance").invoke(null);
+            if (mcInst != null) {
+                File gameDir = (File) mcClass.getField("gameDirectory").get(mcInst);
+                if (gameDir != null) {
+                    writeAppIdFile(new File(gameDir, "steam_appid.txt"));
+                }
             }
         } catch (Throwable ignored) {
         }
+    }
+
+    private void runOnClientThread(Runnable r) {
+        try {
+            Class<?> mcClass = Class.forName("net.minecraft.client.Minecraft");
+            Object mcInst = mcClass.getMethod("getInstance").invoke(null);
+            if (mcInst != null) {
+                mcClass.getMethod("execute", Runnable.class).invoke(mcInst, r);
+                return;
+            }
+        } catch (Throwable ignored) {
+        }
+        new Thread(r).start();
     }
 
     private void writeAppIdFile(File file) {
@@ -94,7 +110,7 @@ public class SteamManager {
             @Override
             public void onGameLobbyJoinRequested(SteamID steamIDLobby, SteamID steamIDFriend) {
                 LOGGER.info("Steam invite / join requested: Lobby={}, Friend={}", steamIDLobby, steamIDFriend);
-                Minecraft.getInstance().execute(() -> {
+                runOnClientThread(() -> {
                     SteamClientBridge.getInstance().joinLobby(steamIDLobby);
                 });
             }
@@ -133,7 +149,7 @@ public class SteamManager {
                 if (lobbyListCallback != null) {
                     Consumer<List<SteamID>> cb = lobbyListCallback;
                     lobbyListCallback = null;
-                    Minecraft.getInstance().execute(() -> cb.accept(lobbies));
+                    runOnClientThread(() -> cb.accept(lobbies));
                 }
             }
         });
