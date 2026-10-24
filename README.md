@@ -1,8 +1,7 @@
-# 🎮 SteamCraft - Multijugador P2P de Minecraft vía Steam (Spacewar)
-
+#  SteamCraft - Multijugador P2P de Minecraft vía Steam
 **SteamCraft** es un mod para Minecraft que permite jugar multijugador con tus amigos utilizando la red Peer-to-Peer (P2P) de **Steam** mediante el **AppID 480 (Spacewar)**. 
 
-### ✨ Ventajas:
+###  Ventajas:
 * **Sin abrir puertos ni configurar routers** (cero Port Forwarding).
 * **Sin programas externos** como Hamachi, Radmin VPN o ngrok.
 * **Túnel directo y seguro** mediante los relays y sockets de Steam Datagram Relay (SDR).
@@ -10,7 +9,7 @@
 
 ---
 
-## 📁 Versiones Listas para Descargar y Compartir
+## Versiones Listas para Descargar y Compartir
 
 Los archivos están organizados por plataforma y versión en sus respectivas carpetas:
 
@@ -31,11 +30,8 @@ SteamCraft-Multiplayer/
         └── steamcraft-1.21.1-neoforge.jar
 ```
 
-> **Nota técnica:** A partir de Minecraft 1.20.6 / 1.21, la comunidad principal de Forge migró a **NeoForge**, por lo que para 1.21.1 dispones de la versión nativa para **NeoForge** y **Fabric**.
 
----
-
-## 📌 Requisitos Previos
+##  Requisitos Previos
 
 1. **Steam abierto en segundo plano:**
    - Tanto la persona que crea el mundo (Host) como quienes se unan deben tener el cliente de Steam abierto y haber iniciado sesión en su cuenta.
@@ -45,7 +41,7 @@ SteamCraft-Multiplayer/
 
 ---
 
-## 🚀 Cómo Instalar
+##  Cómo Instalar
 
 1. Elige la carpeta según el cargador de mods que uses (**Fabric**, **Forge** o **NeoForge**) y la versión de tu Minecraft.
 2. Copia el archivo `.jar` correspondiente.
@@ -55,7 +51,7 @@ SteamCraft-Multiplayer/
 
 ---
 
-## 🕹️ Cómo Jugar
+##  Cómo Jugar
 
 ### Como Anfitrión (Host):
 1. Inicia Minecraft (con Steam abierto).
@@ -71,8 +67,3 @@ SteamCraft-Multiplayer/
 3. En la parte superior verás un botón llamado **"Amigos de Steam"**.
 4. Haz clic en él: aparecerán tus amigos de Steam que tengan un mundo abierto. Haz clic en **"Unirse"**.
 5. *Alternativa:* Si tu amigo te mandó una invitación de Steam, haz clic en **"Unirse a la partida"** directamente desde el chat o la notificación de Steam.
-
----
-
-## ⚠️ ¿Por qué Spacewar (AppID 480)?
-Steam utiliza el ID 480 (Spacewar) como entorno oficial de pruebas para desarrolladores. Gracias a esto, Steam permite inicializar Steamworks, gestionar lobbies P2P, transferir paquetes de red e invitar amigos sin necesidad de pagar una tarifa de desarrollador ni registrar un juego comercial propio en la tienda de Steam. Cuando juegues, tus amigos verán en Steam que estás jugando a *"Spacewar"*.
