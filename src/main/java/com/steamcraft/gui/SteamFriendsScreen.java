@@ -25,26 +25,6 @@ public class SteamFriendsScreen extends Screen {
 
     @Override
     protected void init() {
-        this.clearWidgets();
-
-        int centerX = this.width / 2;
-        int bottomY = this.height - 35;
-
-        // Refresh button
-        this.addRenderableWidget(Button.builder(Component.literal("Refrescar"), btn -> refreshLobbies())
-                .bounds(centerX - 155, bottomY, 95, 20)
-                .build());
-
-        // Steam Overlay button
-        this.addRenderableWidget(Button.builder(Component.literal("Abrir Steam Overlay"), btn -> {
-            SteamManager.getInstance().openInviteOverlay();
-        }).bounds(centerX - 50, bottomY, 110, 20).build());
-
-        // Back button
-        this.addRenderableWidget(Button.builder(Component.literal("Volver"), btn -> onClose())
-                .bounds(centerX + 65, bottomY, 90, 20)
-                .build());
-
         refreshLobbies();
     }
 
@@ -53,8 +33,12 @@ public class SteamFriendsScreen extends Screen {
         this.loading = true;
         this.statusMessage = "Buscando partidas de Steam (Spacewar 480)...";
 
-        // Remove any dynamically added join buttons
-        rebuildWidgets();
+        this.clearWidgets();
+        int centerX = this.width / 2;
+        int bottomY = this.height - 35;
+        this.addRenderableWidget(Button.builder(Component.literal("Refrescar"), btn -> refreshLobbies()).bounds(centerX - 155, bottomY, 95, 20).build());
+        this.addRenderableWidget(Button.builder(Component.literal("Abrir Steam Overlay"), btn -> SteamManager.getInstance().openInviteOverlay()).bounds(centerX - 50, bottomY, 110, 20).build());
+        this.addRenderableWidget(Button.builder(Component.literal("Volver"), btn -> onClose()).bounds(centerX + 65, bottomY, 90, 20).build());
 
         if (!SteamManager.getInstance().isInitialized()) {
             this.loading = false;
