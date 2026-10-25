@@ -22,7 +22,8 @@ SteamCraft-Multiplayer/
 │   ├── steamcraft-1.19.4.jar
 │   ├── steamcraft-1.20.1.jar
 │   ├── steamcraft-1.20.4.jar
-│   └── steamcraft-1.21.1.jar
+│   ├── steamcraft-1.21.1.jar
+│   └── steamcraft-26.3.jar
 ├── Forge/ (Mods para Cliente / LAN)
 │   ├── steamcraft-1.7.10.jar
 │   ├── steamcraft-1.12.2.jar
@@ -31,13 +32,15 @@ SteamCraft-Multiplayer/
 │   ├── steamcraft-1.19.2.jar
 │   ├── steamcraft-1.19.4.jar
 │   ├── steamcraft-1.20.1.jar
-│   └── steamcraft-1.20.4.jar
+│   ├── steamcraft-1.20.4.jar
+│   └── steamcraft-26.3.jar
 ├── NeoForge/ (Mods para Cliente / LAN)
 │   ├── steamcraft-1.20.4.jar
-│   └── steamcraft-1.21.1.jar
+│   ├── steamcraft-1.21.1.jar
+│   └── steamcraft-26.3.jar
 └── Servidor/ (Para Servidores Dedicados 24/7)
     ├── Paper-Spigot/
-    │   └── steamcraft-spigot.jar (Plugin universal: 1.12.2 a 1.21.1+)
+    │   └── steamcraft-spigot.jar (Plugin universal: 1.12.2 a 26.3+)
     ├── Fabric/
     │   ├── steamcraft-server-1.16.5.jar
     │   ├── steamcraft-server-1.18.2.jar
@@ -45,7 +48,8 @@ SteamCraft-Multiplayer/
     │   ├── steamcraft-server-1.19.4.jar
     │   ├── steamcraft-server-1.20.1.jar
     │   ├── steamcraft-server-1.20.4.jar
-    │   └── steamcraft-server-1.21.1.jar
+    │   ├── steamcraft-server-1.21.1.jar
+    │   └── steamcraft-server-26.3.jar
     ├── Forge/
     │   ├── steamcraft-server-1.7.10.jar
     │   ├── steamcraft-server-1.12.2.jar
@@ -54,14 +58,16 @@ SteamCraft-Multiplayer/
     │   ├── steamcraft-server-1.19.2.jar
     │   ├── steamcraft-server-1.19.4.jar
     │   ├── steamcraft-server-1.20.1.jar
-    │   └── steamcraft-server-1.20.4.jar
+    │   ├── steamcraft-server-1.20.4.jar
+    │   └── steamcraft-server-26.3.jar
     └── NeoForge/
         ├── steamcraft-server-1.20.4.jar
-        └── steamcraft-server-1.21.1.jar
+        ├── steamcraft-server-1.21.1.jar
+        └── steamcraft-server-26.3.jar
 ```
 
 > **Universal (Cliente LAN + Servidor Dedicado):** Todos los archivos de Fabric, Forge y NeoForge son híbridos universales. Si los colocas en la carpeta `mods` de un servidor dedicado (`server.jar`), el mod detectará automáticamente el servidor dedicado y publicará el puerto en Steam sin requerir interfaz gráfica.
-> **Servidores Paper / Spigot:** Si tienes un servidor dedicado Paper o Spigot, simplemente coloca `steamcraft-spigot.jar` en la carpeta `plugins/` de tu servidor. Compatible con versiones 1.12.2 hasta 1.21.1+.
+> **Servidores Paper / Spigot:** Si tienes un servidor dedicado Paper o Spigot, simplemente coloca `steamcraft-spigot.jar` en la carpeta `plugins/` de tu servidor. Compatible con versiones 1.12.2 hasta 26.3+.
 
 
 ## ⚙ Requisitos Previos
