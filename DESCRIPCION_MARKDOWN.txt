@@ -1,0 +1,80 @@
+# SteamCraft - Minecraft P2P Multiplayer over Steam (Spacewar)
+
+**SteamCraft** is an open-source Minecraft mod that allows you to play multiplayer with your friends using Steam's Peer-to-Peer (P2P) network infrastructure via **Spacewar (AppID 480)**.
+
+Say goodbye to port forwarding headaches, Hamachi/Radmin VPN issues, and waiting in queues on free hosting services!
+
+---
+
+### ✨ Key Features
+* **Zero Port Forwarding:** No need to touch your router, open ports, or configure firewalls.
+* **No Third-Party VPNs:** Forget about Hamachi, Radmin VPN, or ngrok.
+* **Direct and Secure:** Traffic is encrypted and tunneled through Valve's Steam Datagram Relay (SDR).
+* **Full Steam Integration:** In-game Steam Friends list and native Steam Overlay (`Shift + Tab`) invite support.
+* **Batteries Included:** Pre-bundled with native Steamworks libraries (`steam_api64.dll`, `steamworks4j64.dll`, Linux `.so`, and macOS `.dylib`). No extra installation required!
+
+---
+
+## 🎮 How to Play
+
+### As Host (Opening your world):
+1. Make sure the official **Steam client is running** in the background.
+2. Launch Minecraft and load into your Singleplayer world.
+3. Press `Esc` and select **"Open to LAN"** (or *"Abrir en LAN"*).
+4. Configure your desired game settings and click **"Start LAN World"**.
+5. The mod will automatically register your session with Steam.
+6. Open your pause menu and click **"Invite Steam Friends"**, or open the Steam Overlay (`Shift + Tab`), right-click any friend, and click **"Invite to Game"**.
+
+### As Guest (Joining a friend):
+1. Ensure you have Minecraft open on the **same game version and modloader** as the host.
+2. Head to the **Multiplayer** screen.
+3. Click the **"Steam Friends"** button at the top of the screen.
+4. Click **"Join"** next to your friend's name.
+5. *Alternative:* If your friend sent you a Steam invite, simply accept it directly from your Steam chat notification!
+
+---
+
+## 📦 Supported Platforms & Versions
+
+### Client (LAN Multiplayer):
+* **Fabric:** `1.16.5`, `1.18.2`, `1.19.2`, `1.19.4`, `1.20.1`, `1.20.4`, `1.21.1`, `26.3` *(Requires Fabric API)*
+* **Forge:** `1.7.10`, `1.12.2`, `1.16.5`, `1.18.2`, `1.19.2`, `1.19.4`, `1.20.1`, `1.20.4`, `26.3`
+* **NeoForge:** `1.20.4`, `1.21.1`, `26.3`
+
+### Dedicated Servers (24/7 Hosting):
+* **Paper / Spigot:** Universal plugin (`steamcraft-spigot.jar`) compatible with **1.12.2 up to 26.3+**.
+* **Fabric / Forge / NeoForge Server:** Dedicated server jars auto-detect headless servers and publish the port via Steam.
+
+---
+
+## 📥 Installation
+1. Download the `.jar` file corresponding to your mod loader (**Fabric**, **Forge**, or **NeoForge**) and game version.
+2. Place the `.jar` inside your `.minecraft/mods` folder.
+3. Launch Minecraft with Steam open in the background, and enjoy!
+
+---
+
+## 🚀 Why Spacewar (AppID 480)?
+Steam provides AppID 480 (*Spacewar*) as the official developer test environment for Steamworks. It enables developers and open-source tools to initialize Steam lobbies, route packets through Valve's global relay network, and manage peer connections without requiring commercial store listings or developer fee registration. While playing, your Steam status will show as *"Playing Spacewar"*.
+
+---
+
+## 💖 Support the Project
+If this mod helped you and your friends play together and you wish to support ongoing maintenance and future updates, donations are greatly appreciated!
+
+* **Litecoin (LTC):**  
+  `ltc1q90hfyjnzmxjevcrcuy6cta2hgj7v5w0n29unun`  
+  *(Network: LTC)*
+
+* **USDT (Tether):**  
+  `0x791DA670fe512e63E4e30F549c0262d49A2cBA2d`  
+  *(Network: BNB Smart Chain - BEP20)*
+
+* **BNB:**  
+  `0x791DA670fe512e63E4e30F549c0262d49A2cBA2d`  
+  *(Network: BNB Smart Chain - BEP20)*
+
+---
+
+## Disclaimer
+SteamCraft is an unofficial open-source modification for Minecraft. It is not affiliated with, endorsed by, or associated with Mojang Studios, Microsoft, or Valve Corporation. Minecraft is a trademark of Mojang AB. Steam and Spacewar are trademarks of Valve Corporation.
