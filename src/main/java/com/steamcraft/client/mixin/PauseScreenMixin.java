@@ -20,7 +20,7 @@ public abstract class PauseScreenMixin extends Screen {
 
     @Inject(method = "init", at = @At("TAIL"))
     private void onInit(CallbackInfo ci) {
-        if (SteamHostBridge.getInstance().isHosting()) {
+        if (SteamManager.getInstance().isInitialized()) {
             this.addRenderableWidget(
                 Button.builder(Component.literal("§6Invitar a Steam§r"), btn -> SteamManager.getInstance().openInviteOverlay())
                     .bounds(this.width - 150, 10, 140, 20)
